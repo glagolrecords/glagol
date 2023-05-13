@@ -1,0 +1,330 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*
+Body
+*/
+
+body {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/*
+Header
+*/
+
+header {
+  position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: .5px solid rgb(0, 0, 0);
+    margin-bottom: -61px;
+}
+  
+/*
+Logo
+*/
+
+ .logo {
+    padding: 0 32px;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    }
+
+ .logo:hover {
+   /* transform: matrix(1, 1, -1, 1, 0, 0); */
+   -webkit-transform: translate(2px, -2px) rotate(45deg);
+   -moz-transform: translate(2px, -2px) rotate(45deg);
+   -o-transform: translate(2px, -2px) rotate(45deg);
+   -ms-transform: translate(2px, -2px) rotate(45deg);
+   transform: translate(2px, -2px) rotate(45deg);
+    -webkit-filter: blur(5.1px);
+    -moz-filter: blur(5.1px);
+    -o-filter: blur(5.1px);
+    -ms-filter: blur(5.1px);
+    filter: blur(5.1px);
+ }
+
+ .logo2 {
+  padding: 2vh 2vw;
+  width: 2%;
+
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  }
+
+.logo2:hover {
+ /* transform: matrix(1, 1, -1, 1, 0, 0); */
+ -webkit-transform: translate(2px, -2px) rotate(45deg);
+ -moz-transform: translate(2px, -2px) rotate(45deg);
+ -o-transform: translate(2px, -2px) rotate(45deg);
+ -ms-transform: translate(2px, -2px) rotate(45deg);
+ transform: translate(2px, -2px) rotate(45deg);
+  -webkit-filter: blur(5.1px);
+  -moz-filter: blur(5.1px);
+  -o-filter: blur(5.1px);
+  -ms-filter: blur(5.1px);
+  filter: blur(5.1px);
+}
+
+/*
+Menu
+*/
+
+nav {
+    display: flex;
+    gap: 32px;
+    margin-right: 60px;
+}
+
+nav a {
+    padding-left: 30px;
+    font-family: 'Quicksand', sans-serif;
+    color: #000000;
+    text-decoration: none;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  
+ nav a:hover {
+    -webkit-transform: scale(.8, .8);
+    -moz-transform: scale(.8, .8);
+    -o-transform: scale(.8, .8);
+    -ms-transform: scale(.8, .8);
+    transform: scale(.8, .8);
+    opacity: .5;
+  }
+
+/*
+  ========================================
+  Rows
+  ========================================
+
+
+.row {
+  max-width: auto;
+  vertical-align: middle;
+}
+*/
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ height: 100vh;
+   /* если вы хотите разместить div по центру по вертикали */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 61px;
+  height: 80vh;
+}
+
+.demo,
+.forma,
+.logos {
+  flex-grow: 1;
+  width: 100%;
+}
+/*
+.heading span {
+    display: block;
+}
+*/
+
+h1 {
+  text-align: center;
+    font-size: 3.64vw;
+    font-weight: 500;
+    font-family: 'Golos Text', sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: -0.035em;
+  }
+
+/*
+  ========================================
+  Contact
+  ========================================
+*/
+
+form {
+  text-align: center;
+}
+input,
+textarea {
+  font: 200 12px/18px 'Golos Text', sans-serif;
+}
+/*.register-group {
+
+  margin-top: 5vh;
+
+} */
+.register-group input,
+.register-group textarea {
+  display: block;
+  background: #f3f3f3;
+  border: none;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 10px;
+  width: 50vw;
+}
+.register-group textarea {
+  height: 150px;
+}
+
+.btn-default {
+  border: 0;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 12px;
+}
+.btn-default:hover {
+  border: 0;
+  background: #000000;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+.logos {
+  text-align: center;
+  display: block;
+}
+
+  /*
+  Footer
+  */
+
+  footer {
+    text-align: center;
+    margin-top: -18px;
+  }
+
+  small {
+    color:#000000;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 8px;
+}
+  
+  /*
+  Tabel
+*/
+
+@media (max-width: 767.99px) {
+
+  header {
+      display: flex;
+      justify-content: space-between;
+}
+
+nav {
+gap: 0;
+margin-right: 4vw;
+}
+
+  nav a {
+    padding-left: 3vw;
+    font-size: 14px;
+  }
+
+ .logo {
+  padding: 0 4vw;
+ }
+
+ .logo2 {
+  width: 3.5%;
+  }
+
+}
+
+@media screen and (max-width: 767.99px) and (orientation: landscape) {
+  header {
+    margin-bottom: 23%;
+  }
+
+.container {
+  
+  margin-top: 0px;
+  margin-bottom: 20%;
+}
+footer {
+  margin-top: auto;
+}
+}

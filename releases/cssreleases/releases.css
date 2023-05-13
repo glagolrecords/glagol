@@ -1,0 +1,350 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*
+Body
+*/
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.background1 {
+  position: relative;
+  background-image: url("../images/cover_winter\(r\).jpg");
+  background-size: 20%;
+}
+
+.background2 {
+  position: relative;
+  background-image: url("../images/cover_mosaica\(r\).jpg");
+  background-size: 20%;
+}
+
+.background3 {
+  position: relative;
+  background-image: url("../images/wetwe1featR.jpg");
+  background-size: 20%;
+}
+
+.background4 {
+  position: relative;
+  background-image: url("../images/airto_clearR.jpg");
+  background-size: 20%;
+}
+
+.background5 {
+  position: relative;
+  background-image: url("../images/cover_organic_house5000.jpg");
+  background-size: 20%;
+}
+
+.background1::before,
+.background2::before,
+.background3::before,
+.background4::before,
+.background5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0); /* необязательно */
+ /* filter: brightness(50%); /* изменение яркости на 50% */
+  z-index: -1; /* поместить псевдоэлемент под основным контентом */
+}
+
+/*
+Header
+*/
+
+header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    border-bottom: .5px solid rgb(0, 0, 0);
+}
+  
+/*
+Logo
+*/
+
+ .logo {
+    padding: 0 32px;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    }
+
+ .logo:hover {
+   /* transform: matrix(1, 1, -1, 1, 0, 0); */
+   -webkit-transform: translate(2px, -2px) rotate(45deg);
+   -moz-transform: translate(2px, -2px) rotate(45deg);
+   -o-transform: translate(2px, -2px) rotate(45deg);
+   -ms-transform: translate(2px, -2px) rotate(45deg);
+   transform: translate(2px, -2px) rotate(45deg);
+    -webkit-filter: blur(5.1px);
+    -moz-filter: blur(5.1px);
+    -o-filter: blur(5.1px);
+    -ms-filter: blur(5.1px);
+    filter: blur(5.1px);
+ }
+
+/*
+Menu
+*/
+
+nav {
+    display: flex;
+    gap: 32px;
+    margin-right: 60px;
+}
+
+nav a {
+    padding-left: 30px;
+    font-family: 'Quicksand', sans-serif;
+    color: #000000;
+    text-decoration: none;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  
+ nav a:hover {
+    -webkit-transform: scale(.8, .8);
+    -moz-transform: scale(.8, .8);
+    -o-transform: scale(.8, .8);
+    -ms-transform: scale(.8, .8);
+    transform: scale(.8, .8);
+    opacity: .5;
+  }
+
+/*
+  ========================================
+  Main
+  ========================================
+*/
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 50px;
+    width: 450px;
+    height: 450px;
+	border:5px solid black;
+}
+
+.music {
+ /* filter: saturate(5); */
+    align-self: center;
+    padding-bottom: 30px;
+}
+
+/*
+Text
+*/
+
+.heading {
+    color: white;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -5px;
+    line-height: 68.02%;
+}
+
+/*
+
+
+@media (max-width: 767.99px) {
+    .heading {
+        font-size: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .heading {
+        flex-direction: column;
+        font-size: 200px;
+    }
+}
+
+@media (max-width: 767.99px) {
+    .grid {
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-rows: 1fr;
+        grid-template-columns: 320px 1fr;
+    }
+}
+
+
+Img
+*/
+
+
+h1 {
+    font-weight: 500;
+    font-family: 'Golos Text', sans-serif;
+    text-transform: uppercase;
+    align-self: center;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 21px;
+  }
+
+  span {
+    color: darkgrey;
+  }
+
+  p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    padding-left: 50px;
+  }
+  
+strong {
+font-weight: 900;
+}
+  
+ol {
+  list-style-type: decimal;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  padding-left: 63px;
+}
+
+.button {
+  align-self: center;
+  font-family: 'Golos Text', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.button:hover {
+  color: white;
+  background-color: black;
+
+}
+
+  /*
+  Footer
+  */
+
+  footer {
+    text-align: center;
+    margin-top: auto;
+  }
+
+  small {
+    background-color: white;
+    color:#000000;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 8px;
+}
+
+@media (max-width: 767.99px) {
+
+  header {
+      display: flex;
+      justify-content: space-between;
+}
+
+nav {
+gap: 0;
+margin-right: 4vw;
+}
+
+  nav a {
+    padding-left: 3vw;
+    font-size: 14px;
+  }
+
+ .logo {
+  padding: 0 4vw;
+ }
+
+}

@@ -1,0 +1,262 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*
+Header
+*/
+
+header {
+    position: absolute;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: .5px solid rgb(0, 0, 0);
+    background: #ffffff;
+    z-index: 9999;
+}
+  
+/*
+Logo
+*/
+
+ .logo {
+    padding: 0 32px;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    }
+
+ .logo:hover {
+   /* transform: matrix(1, 1, -1, 1, 0, 0); */
+   -webkit-transform: translate(2px, -2px) rotate(45deg);
+   -moz-transform: translate(2px, -2px) rotate(45deg);
+   -o-transform: translate(2px, -2px) rotate(45deg);
+   -ms-transform: translate(2px, -2px) rotate(45deg);
+   transform: translate(2px, -2px) rotate(45deg);
+    -webkit-filter: blur(5.1px);
+    -moz-filter: blur(5.1px);
+    -o-filter: blur(5.1px);
+    -ms-filter: blur(5.1px);
+    filter: blur(5.1px);
+ }
+
+/*
+Menu
+*/
+
+nav {
+    display: flex;
+    gap: 32px;
+    margin-right: 60px;
+}
+
+nav a {
+    padding-left: 30px;
+    font-family: 'Quicksand', sans-serif;
+    color: #000000;
+    text-decoration: none;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  
+ nav a:hover {
+    -webkit-transform: scale(.8, .8);
+    -moz-transform: scale(.8, .8);
+    -o-transform: scale(.8, .8);
+    -ms-transform: scale(.8, .8);
+    transform: scale(.8, .8);
+    opacity: .5;
+  }
+
+/*
+  ========================================
+  Rows
+  ========================================
+
+
+.row {
+  max-width: auto;
+  vertical-align: middle;
+}
+*/
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+
+/*
+Img
+*/
+
+.image-row {
+  display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  transition: transform 0.8s;
+}
+
+.text h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  color: rgb(255, 255, 255);
+  font-family: 'Golos Text', sans-serif;
+  text-align: center;
+  font-size: 3vw;
+  transition: transform 0.8s;
+}
+
+.image-container .text p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgb(0, 0, 0);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2vw;
+  text-indent: 1vw;
+  padding: 90px 1.2vw;
+  line-height: 1.7vw;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.image-container:hover img {
+  transform: rotateY(180deg);
+}
+
+.image-container:hover .text h1 {
+  transition: opacity 0.8s;
+  opacity: 0;
+}
+
+.image-container:hover .text p {
+  transition: opacity 0.8s;
+  opacity: 1;
+}
+
+/*.image-container:hover .text {
+  opacity: 1;
+  transition: 0.5s ease opacity;
+  background-color: rgba(0, 0, 0, 1);
+}*/
+
+
+  /*
+  Footer
+  */
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  small {
+    color:#777;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 8px;
+}
+
+@media (max-width: 767.99px) {
+
+  header {
+      display: flex;
+      justify-content: space-between;
+}
+
+nav {
+gap: 0;
+margin-right: 4vw;
+}
+
+  nav a {
+    padding-left: 3vw;
+    font-size: 14px;
+  }
+
+ .logo {
+  padding: 0 4vw;
+ }
+
+}
